@@ -6,7 +6,7 @@ function selectText(text){
 }
 
 function replaceContent(){
-var links = $('a[href^="http:/"]');
+var links = $('a[href^="http://"]');
 
   for (var index=0; index<links.length; index++){
       var trueText = selectText(links[index].href);
