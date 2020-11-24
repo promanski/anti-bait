@@ -1,5 +1,5 @@
 # anti-bait
-Anti-clickbait plugin for one of the biggest polish/german web portal.
+Anti-clickbait plugin
 
 ##Usage
 
