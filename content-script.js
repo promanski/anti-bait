@@ -40,8 +40,15 @@ function init() {
   }
 }
 
-window.addEventListener("load", function () {
-  init();
-});
+const targetNode = document.querySelector('body');
+const config = { childList: true, subtree: true };
+const callback = function (mutationsList, observer) {
+  for (const mutation of mutationsList) {
+    if (mutation.type === 'childList') {
+      init();
+    }
+  }
+};
 
-setTimeout(() => init, 1000)
+const observer = new MutationObserver(callback);
+observer.observe(targetNode, config);
