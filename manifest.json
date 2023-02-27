@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Anti-bait",
+    "version": "1.0",
+    "action": {
+    
+      "default_title": "Anti-bait"
+    },
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["onet.pl"],
+        "js": ["/content-script.js"]
+      }
+    ]
+  }
