@@ -9,7 +9,7 @@
     "permissions": ["activeTab"],
     "content_scripts": [
       {
-        "matches": ["*://onet.pl"]
+        "matches": ["*://onet.pl"],
         "js": ["/content-script.js"]
       }
     ]
