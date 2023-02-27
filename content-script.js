@@ -3,9 +3,11 @@ function extractTextFromUrl(url) {
   let segments = url.split("/");
   let lastSegment = segments[segments.length - 2];
   // Replace "-" with " " and capitalize the first letter
-  let text = lastSegment.replace(/-/g, " ").replace(/^\w/, c => c.toUpperCase());
-  // Return the text
-  return text;
+  if (lastSegment) {
+    let text = lastSegment.replace(/-/g, " ").replace(/^\w/, c => c.toUpperCase());
+    // Return the text
+    return text;
+  }
 }
 
 // Get all links on the webpage using document.links property
