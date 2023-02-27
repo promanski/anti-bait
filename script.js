@@ -16,7 +16,7 @@ for (let link of links) {
   // Get the href attribute of the link
   let cls = link.className;
   // Check if the class starts with BigCard using startsWith method
-  if (!cls.startsWith("BigCard") || !cls.startsWith('Menu')) {
+  if (!cls.startsWith('Menu')){
   let href = link.href;
   // Get the extracted text from the href using extractTextFromUrl function
   let text = extractTextFromUrl(href);
