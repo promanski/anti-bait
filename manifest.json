@@ -1,10 +1,10 @@
 {
     "manifest_version": 3,
-    "name": "Anti-bait",
+    "name": "link-swapper",
     "version": "1.0",
     "action": {
     
-      "default_title": "Anti-bait"
+      "default_title": "link-swapper"
     },
     "permissions": ["activeTab"],
     "content_scripts": [
